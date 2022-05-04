@@ -3,7 +3,8 @@ const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
 btn.addEventListener("click", () => {
- 
+    document.body.style.backgroundColor = randomHexValue();
+    color.textContent = randomHexValue();
 });
 
 function randomHexValue(){
@@ -16,6 +17,3 @@ function randomHexValue(){
     }
     return hexValue;
 };
-
-console.log(randomHexValue());
-
