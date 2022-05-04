@@ -3,8 +3,10 @@ const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
 btn.addEventListener("click", () => {
-    document.body.style.backgroundColor = randomHexValue();
-    color.textContent = randomHexValue();
+    let firstColor = randomHexValue();
+    let secondColor = randomHexValue();
+    document.body.style.background = `linear-gradient(to right, ${firstColor}, ${secondColor})`
+    color.textContent = `${firstColor} and ${secondColor}`;
 });
 
 function randomHexValue(){
