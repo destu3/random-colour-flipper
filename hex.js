@@ -6,7 +6,7 @@ btn.addEventListener("click", () => {
     let firstColor = randomHexValue();
     let secondColor = randomHexValue();
     document.body.style.background = `linear-gradient(to right, ${firstColor}, ${secondColor})`
-    color.textContent = `${firstColor} and ${secondColor}`;
+    color.textContent = `${firstColor}, ${secondColor}`;
 });
 
 function randomHexValue(){
